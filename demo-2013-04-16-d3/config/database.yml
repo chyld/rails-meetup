@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: demo-2013-04-16-d3_development
+  pool: 5
+  host: localhost
+  username: chyld
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: demo-2013-04-16-d3_test
+  pool: 5
+  host: localhost
+  username: chyld
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: demo-2013-04-16-d3_production
+  pool: 5
+  host: localhost
+  username: chyld
+  password:

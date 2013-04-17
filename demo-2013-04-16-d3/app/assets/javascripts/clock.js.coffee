@@ -18,7 +18,7 @@ window.app =
     rects.exit()
                  .transition()
                  .duration(250)
-                 .attr('y', 0)
+                 .attr('y', height)
                  .style('fill', 'red')
                  .remove()
   ready: ->

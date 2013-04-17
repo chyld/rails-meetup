@@ -3,3 +3,17 @@
  *= require 'clock.css'
  *= require 'names.css'
  */
+
+nav
+{
+  border-bottom: 1px dashed #cccccc;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+a
+{
+  text-decoration: none;
+  color: #dd0033;
+  font-size: 21px;
+}

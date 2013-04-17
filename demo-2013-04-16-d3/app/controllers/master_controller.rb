@@ -7,7 +7,6 @@ class MasterController < ApplicationController
 
   def create_person
     Pusher.trigger('meetup', 'person_created', {name: params[:name], color: params[:color]})
-    render :nothing => true
   end
 
   def remove_person

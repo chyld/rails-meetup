@@ -1,10 +1,10 @@
-window.clock =
+window.app =
   svg: null
   tick: ->
     second = moment().format('s').toNumber()
     numbers = [0..second]
     height = $('svg').css('height').toNumber()
-    rects = clock.svg.selectAll('rect').data(numbers)
+    rects = app.svg.selectAll('rect').data(numbers)
     rects.enter().append('rect')
                  .attr('width', 50)
                  .attr('height', 10)
@@ -22,7 +22,7 @@ window.clock =
                  .style('fill', 'red')
                  .remove()
   ready: ->
-    clock.svg = d3.select('svg')
-    setInterval(clock.tick, 1000)
+    app.svg = d3.select('svg')
+    setInterval(app.tick, 1000)
 
-$(document).ready(clock.ready)
+$(document).ready(app.ready)

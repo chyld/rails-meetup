@@ -4,4 +4,3 @@
 //= require 'moment.js'
 //= require 'underscore.js'
 //= require 'sugar.js'
-//= require 'clock.js'

@@ -1,0 +1,13 @@
+#names
+  = form_tag '/names', :remote => true do
+    %table
+      %tr
+        %td= label_tag :name
+        %td= text_field_tag :name, nil, :autofocus => true
+      %tr
+        %td= label_tag :color
+        %td= text_field_tag :color
+      %tr
+        %td
+        %td= submit_tag 'Create Person'
+  %svg
